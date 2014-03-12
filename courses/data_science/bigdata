@@ -1,0 +1,24 @@
+1.2 case study tweet visualization 
+mapd 
+using GPU to paralell computations. 
+
+Brute Force /massive parallelism 
+- mapD (hadoop, and many others) 
+
+Partitioning 
+- split the data, operate on the part you need.
+,vertical split, horizontal split 
+
+sampling
+- operate on the subset of data
+
+summarization(core set, sketches)
+-operate on a summary of the data. 
+
+
+Data cleaning and collection
+
+Data Wrangler
+Data tamer
+
+
