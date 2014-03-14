@@ -18,6 +18,12 @@ summarization(core set, sketches)
 
 Data cleaning and collection
 
+1.traditional ETL is too hard to integrate many sources. 
+2. cleaning will be a big issue forever. 
+
+hard to search code that you need to prevent you from redo. 
+
+
 Data Wrangler
 Data tamer
 
