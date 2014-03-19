@@ -1,0 +1,64 @@
+1.2 case study tweet visualization 
+mapd 
+using GPU to paralell computations. 
+
+Brute Force /massive parallelism 
+- mapD (hadoop, and many others) 
+
+Partitioning 
+- split the data, operate on the part you need.
+,vertical split, horizontal split 
+
+sampling
+- operate on the subset of data
+
+summarization(core set, sketches)
+-operate on a summary of the data. 
+
+
+2.1Data cleaning and collection
+
+1.traditional ETL is too hard to integrate many sources. 
+2. cleaning will be a big issue forever. 
+
+hard to search code that you need to prevent you from redo. 
+
+
+Data Wrangler
+Data tamer
+
+
+2.2 Cloud computing 
+
+Companies to check out: 
+Amazon, Google, rackspace, splunk, salesforce, tableau 
+
+** advantage**
+1. for user
+Fast deployment. 
+outsourced management
+lower cost
+elasticity
+
+2. for provider
+Economies of scale
+fast deployment
+optimization across users
+
+3. for big data use case
+- access to reliable distributed storage (hard to do alone)
+- elasticity for large computations
+- data sharing across tenants. 
+
+**challenges** 
+1. security and privacy guarantees
+2. data import and export
+3. lock-in. 
+
+
+**economy**
+variable utilization, peak and low. 
+
+why can provider do this better:
+*statistical multiplexing
+
