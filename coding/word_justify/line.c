@@ -35,7 +35,7 @@ void addword(const char *word ) {
 } 
 
 void  writeline(void) {
-    int num_space = space_available + num_words - 1;
+    int num_space = space_available + num_words ;
     char tmp[60 + 1];
     int line_count = 0;
     int i=0, j;
