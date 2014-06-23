@@ -133,11 +133,11 @@ while (!file.eof())
    }
    vector<int> res;
    vector<int> unfin;
+   
    for(int i=1;i<=len;i++) unfin.push_back(i);
    int min;
    while(true) {
        len = unfin.size();
-       
        for(int i=len-1;i>=0;i--) {
            if(intersets[unfin[i]].size() == 0) {
                 res.push_back(unfin[i]); 
@@ -156,14 +156,22 @@ while (!file.eof())
        for(;it != intersets[unfin[min]].end();it++)  {
             int tmp = *it;
             for(iit = intersets[tmp].begin();iit != intersets[tmp].end();iit++) {
-                intersets[*iit].erase(tmp);
+                 if(*iit == minID) continue;
+                 if(intersets[*iit].find(tmp)!= intersets[*iit].end())
+                      intersets[*iit].erase(tmp);
             }
             intersets[tmp].clear();
+            for(int i=0;i<unfin.size();i++) {
+            	if(unfin[i] == tmp) {
+                   unfin.erase(unfin.begin()+i);
+                   break;
+                }
+			}
        }
        intersets[unfin[min]].clear();
    }
    sort(res.begin(),res.end());
    for(int i=0;i<res.size();i++) 
-	cout << i+1 <<": "<<res[i]<<endl;
+	cout <<res[i]<<endl;
 return 0;
 }
